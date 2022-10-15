@@ -17,14 +17,14 @@ const gamePrediction = (range) => {
   if (rndGuess === playerGuess) {
     console.log(`current value of point = ${point}`)
     point = point + 1;
-    alert(`${playerName}, you won!, You've scored ${point} point`);
+    console.log(`${playerName}, you won!, You've scored ${point} point`);
     //point++;
     gamePrediction(range + 1);
 
 
   } else {
     point = 0;
-    alert(`${playerName}, you lose`);
+    console.log(`${playerName}, you lose`);
   }
 }
 gamePrediction(2);
